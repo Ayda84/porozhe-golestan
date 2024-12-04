@@ -19,6 +19,7 @@
   background-color: #333;
   position: sticky;
   top: 0;
+  z-index: 10;
 
   nav {
     width: inherit;
@@ -28,7 +29,6 @@
       margin-left: 50px;
       margin-top: 88px;
       cursor: pointer;
-  
     }
     ul {
       width: inherit;
@@ -39,7 +39,6 @@
       align-items: center;
       justify-content: center;
       gap: 5px;
-
 
       li {
         width: fit-content;
@@ -122,104 +121,207 @@
     }
   }
 }
-// end header 
+// end header
 
-// start img-golestan 
-@keyframes text-gol{
-    from{margin-top: -260px;}
-    to{margin-top: 30px;}
+// start img-golestan
+@keyframes text-gol {
+  from {
+    margin-top: -260px;
+  }
+  to {
+    margin-top: 30px;
+  }
 }
 
 @keyframes tea {
-    from{margin-top: -700px;}
-    to{margin-top: 20px;}
+  from {
+    margin-top: -700px;
+  }
+  to {
+    margin-top: 20px;
+  }
 }
 
+.img-golestan {
+  width: 100%;
+  height: 460px;
+  background-image: linear-gradient(190deg, #fbfbfb 0%, #d2d2d2 100%);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 15px;
 
-.img-golestan{
-    width: 100%;
+  .text-golestan {
+    width: 55%;
     height: 460px;
-    background-image: linear-gradient(190deg, #FBFBFB 0%, #D2D2D2 100%);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: start;
+    font-family: iran;
+    line-height: 45px;
+
+    .red-text {
+      color: #ff0000;
+      font-size: 30px;
+      margin-top: 60px;
+      margin-right: 190px;
+    }
+
+    .gray-text {
+      color: #58595b;
+      font-size: 18px;
+      margin-right: 140px;
+    }
+
+    .more-text > a {
+      text-decoration: none;
+      border: 1px solid lightgray;
+      background-color: white;
+      padding: 7px 23px;
+      font-family: iran;
+      border-radius: 8px;
+      color: #7c7d7e;
+      margin-right: -60px;
+      transition: 400ms;
+
+      &:hover {
+        background-color: #ff0000;
+        color: white;
+      }
+    }
+  }
+
+  pre.text-ghorekeshi {
+    color: #898989;
+    font-family: iran;
+    line-height: 33px !important;
+    margin-top: 30px;
+    margin-right: 175px;
+    animation-name: text-gol;
+    animation-duration: 2s;
+  }
+
+  .image-gol {
+    width: 45%;
+    height: 460px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      margin-top: 20px;
+      margin-left: 150px;
+      animation-name: tea;
+      animation-duration: 3s;
+    }
+  }
+}
+// end img-golestan
+
+// start text 
+@keyframes text {
+    from{margin-right: -1500px;}
+    to{margin-right: 3px;}
+}
+
+.maintext1 {
+  width: 100%;
+  height: 770px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+
+  .moarefi {
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    animation-name: text;
+    animation-duration: 1.5s;
+   
+  }
+
+  .mahsolat{
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    animation-name: text;
+    animation-duration: 1.5s;
+   
+
+    h2{
+        margin-top: -80px;
+    }
+   
+  }
+}
+
+h2{
+    color: #ff0000;
+    font-family: iran;
+    font-size: 20px;
+    margin-right: -560px;
+    margin-bottom: 17px;
+    vertical-align: top;
+ 
+}
+
+pre.every-text{
+    font-family: iran;
+    color: #7A7A7A;
+    font-size: 17px;
+    line-height: 35px;
+
+    span.red-word{
+        color: #ff0000 !important;
+    }
+}
+
+.hadaf{
+    margin-top: 5px;
+}
+// end text 
+// start fourimg 
+
+@keyframes four {
+    from{scale: 0%}
+    to{scale: 100%;}
+}
+
+.main-four{
+    width: 55%;
+    height: 290px;
+    margin: 50px auto;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: start;
+    margin-top: -20px;
+    animation-name: four;
+    animation-duration:1.3s;
 
-  
 
-
-    .text-golestan{
-        width: 55%;
-        height: 460px;
+    div[class^="image"]{
+        width: 25%;
+        height: 250px;
+        margin: 0 5px;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
-        justify-content: start;
-        font-family: iran;
-        line-height: 45px;
-
-        .red-text{
-            color: #FF0000;
-            font-size: 30px;
-            margin-top: 60px;
-            margin-right: 190px;
-           
-        }
-
-        .gray-text{
-            color: #58595B;
-            font-size: 18px;
-            margin-right: 140px;
-
-        }
-
-     .more-text>a{
-        text-decoration: none;
-        border: 1px solid lightgray;
-        background-color: white;
-        padding: 7px 23px;
-        font-family: iran;
-        border-radius: 8px;
-        color: #7C7D7E;
-        margin-right: -60px;
-        transition: 400ms;
-
-        &:hover{
-            background-color: #FF0000;
-            color: white;
-        }
-     }
+        justify-content: top;
+        border-bottom: 1px solid lightgray;
 
 
-    }
-
-    pre.text-ghorekeshi{
-        color: #898989;
-        font-family: iran;
-        line-height: 33px !important;
-        margin-top: 30px;
-        margin-right: 175px;
-        animation-name: text-gol;
-        animation-duration: 2s;
-    }
-
-    .image-gol{
-        width: 45%;
-        height: 460px;
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        justify-content: center;
-
-        img{
+        p{
+            font-family: iran;
+            color: #7C7D7E;
             margin-top: 20px;
-            margin-left: 150px;
-            animation-name: tea;
-            animation-duration: 3s;
-
         }
-
     }
 }
-
-
+// end fourimg 
