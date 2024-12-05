@@ -221,10 +221,14 @@
 }
 // end img-golestan
 
-// start text 
+// start text
 @keyframes text {
-    from{margin-right: -1500px;}
-    to{margin-right: 3px;}
+  from {
+    margin-right: -1500px;
+  }
+  to {
+    margin-right: 3px;
+  }
 }
 
 .maintext1 {
@@ -234,184 +238,418 @@
   grid-template-rows: 2fr 1fr;
 
   .moarefi {
-
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
     animation-name: text;
     animation-duration: 1.5s;
-   
   }
 
-  .mahsolat{
-
+  .mahsolat {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
     animation-name: text;
     animation-duration: 1.5s;
-   
 
-    h2{
-        margin-top: -80px;
+    h2 {
+      margin-top: -80px;
     }
-   
   }
 }
 
-h2{
+h2 {
+  color: #ff0000;
+  font-family: iran;
+  font-size: 20px;
+  margin-right: -530px;
+  margin-bottom: 17px;
+  vertical-align: top;
+}
+
+pre.every-text {
+  font-family: iran;
+  color: #7a7a7a;
+  font-size: 17px;
+  line-height: 35px;
+  text-align: justify;
+
+  span.red-word {
+    color: #ff0000 !important;
+    font-weight: bold;
+  }
+}
+
+.hadaf {
+  margin-top: 5px;
+}
+// end text
+// start fourimg
+
+@keyframes four {
+  from {
+    scale: 0%;
+  }
+  to {
+    scale: 100%;
+  }
+}
+
+.main-four {
+  width: 55%;
+  height: 290px;
+  margin: 50px auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: start;
+  margin-top: -20px;
+  animation-name: four;
+  animation-duration: 1.3s;
+  margin-bottom: 100px;
+
+  div[class^="image"] {
+    width: 25%;
+    height: 250px;
+    margin: 0 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: top;
+    border-bottom: 1px solid lightgray;
+
+    p {
+      font-family: iran;
+      color: #7c7d7e;
+      margin-top: 20px;
+    }
+  }
+}
+// end fourimg
+// start main-photo
+.main-photo {
+  width: 100%;
+  height: 510px;
+  margin-top: 20px;
+  background-color: #f2dfab;
+  position: relative;
+  margin-bottom: 40px;
+
+  img {
+    width: 100%;
+    height: 96%;
+    object-fit: cover;
+  }
+
+  .red-div {
+    width: 290px;
+    height: 95px;
+    position: absolute;
+    background-color: #ed1c24;
+    margin-top: -80px;
+    margin-right: 350px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 40px;
+
+    h3 {
+      color: white;
+      font-family: iran;
+      font-weight: lighter;
+      font-size: 29px;
+      margin-right: -90px;
+    }
+
+    p {
+      color: white;
+      font-family: iran;
+      font-size: 15px;
+      margin-right: -130px;
+    }
+  }
+}
+.ricetext {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.ricebtn {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: start;
+  margin-top: -60px;
+  margin-bottom: 50px;
+
+  .rice-btn > a {
+    text-decoration: none;
+    border: 1px solid lightgray;
+    background-color: white;
+    padding: 7px 23px;
+    font-family: iran;
+    border-radius: 8px;
+    color: #7c7d7e;
+    transition: 400ms;
+    margin-right: 410px;
+
+    &:hover {
+      background-color: #ff0000;
+      color: white;
+    }
+  }
+
+  .rice-btn2 > a {
+    text-decoration: none;
+    border: 1px solid lightgray;
+    background-color: white;
+    padding: 7px 23px;
+    font-family: iran;
+    border-radius: 8px;
+    color: #7c7d7e;
+    transition: 400ms;
+    margin-right: 5px;
+
+    &:hover {
+      background-color: #ff0000;
+      color: white;
+    }
+  }
+}
+
+.teatext {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.teatext2 {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.teabtn {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: start;
+  margin-top: -50px;
+
+  .tea-btn > a {
+    text-decoration: none;
+    border: 1px solid lightgray;
+    background-color: white;
+    padding: 7px 23px;
+    font-family: iran;
+    border-radius: 8px;
+    color: #7c7d7e;
+    transition: 400ms;
+    margin-right: 390px;
+    margin-top: -80px !important;
+
+    &:hover {
+      background-color: #ff0000;
+      color: white;
+    }
+  }
+}
+
+.pestetext {
+  width: 100%;
+  height: 197px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.pestetext2 {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: -20px;
+
+  .pestebtn {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: start;
+    margin-top: -40px;
+
+    .peste-btn > a {
+      text-decoration: none;
+      border: 1px solid lightgray;
+      background-color: white;
+      padding: 7px 23px;
+      font-family: iran;
+      border-radius: 8px;
+      color: #7c7d7e;
+      transition: 400ms;
+      margin-right: 420px;
+      margin-top: -30px !important;
+
+      &:hover {
+        background-color: #ff0000;
+        color: white;
+      }
+    }
+  }
+}
+
+.mainback {
+  width: 100%;
+  height: 246px;
+  background-color: aqua;
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+
+  .topback {
+    width: 100%;
+    height: 123px;
+    background-image: url(../image/back/recipe-baner-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .bottomback {
+    width: 100%;
+    height: 123px;
+    background-image: url(../image/back/recipe-baner-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+.majale {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+
+  .hmajale {
     color: #ff0000;
     font-family: iran;
     font-size: 20px;
-    margin-right: -560px;
+    margin-right: -800px;
     margin-bottom: 17px;
     vertical-align: top;
- 
+  }
 }
 
-pre.every-text{
-    font-family: iran;
-    color: #7A7A7A;
-    font-size: 17px;
-    line-height: 35px;
+.mainslide {
+  width: 100%;
+  height: 770px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #cde4b0;
+  margin-top: -10px;
+  gap: 10px;
 
-    span.red-word{
-        color: #ff0000 !important;
-    }
-}
-
-.hadaf{
-    margin-top: 5px;
-}
-// end text 
-// start fourimg 
-
-@keyframes four {
-    from{scale: 0%}
-    to{scale: 100%;}
-}
-
-.main-four{
-    width: 55%;
-    height: 290px;
-    margin: 50px auto;
+  div[class^="slide"] {
+    width: 310px;
+    height: 600px;
+    background-color: white;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     align-items: center;
     justify-content: start;
-    margin-top: -20px;
-    animation-name: four;
-    animation-duration:1.3s;
-    margin-bottom: 100px;
+    box-shadow: 2px 2px 5px rgb(162, 159, 159);
 
+    .img-slide {
+      width: 310px;
+      height: 310px;
 
-    div[class^="image"]{
-        width: 25%;
-        height: 250px;
-        margin: 0 5px;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        justify-content: top;
-        border-bottom: 1px solid lightgray;
-
-
-        p{
-            font-family: iran;
-            color: #7C7D7E;
-            margin-top: 20px;
-        }
-    }
-}
-// end fourimg 
-// start main-photo 
-.main-photo{
-    width: 100%;
-    height: 510px;
-    margin-top: 20px;
-    background-color: #f2dfab;
-    position: relative;
-    margin-bottom: 40px;
-
-    img{
+      .image-slide {
         width: 100%;
-        height: 96%;
+        height: 100%;
         object-fit: cover;
+        display: block;
+        opacity: 1;
+        transition: 0.3s ease;
+      }
+
+      
     }
 
-    .red-div{
-        width: 290px;
-        height: 95px;
-        position: absolute;
-        background-color: #ED1C24;
-        margin-top: -80px;
-        margin-right: 350px;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        justify-content: center;
-        line-height: 40px;
-
-        h3{
-            color: white;
-            font-family: iran;
-            font-weight: lighter;
-            font-size: 29px;
-            margin-right: -90px;
-
-        }
-
-        p{
-            color: white;
-            font-family: iran;
-            font-size: 15px;
-            margin-right: -130px;
-        }
+    .img-slide:hover .image-slide{
+      opacity: 0.7;
     }
 
-   
-}
-.ricetext{
-    width: 100%;
-    height: 270px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-}
+    .text-slide {
+      width: 310px;
+      height: 200px;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
 
-.ricebtn{
-    width: 100%;
-    height: 150px;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: start;
-    margin-top: -60px;
-    margin-bottom: 50px;
+      h2.slider1 {
+        color: #ff0000;
+        font-family: iran;
+        font-size: 20px;
+        margin-right: -110px;
+        font-weight: lighter;
+        margin-top: 10px;
+      }
 
-    .rice-btn>a{
-        text-decoration: none;
-            border: 1px solid lightgray;
-            background-color: white;
-            padding: 7px 23px;
-            font-family: iran;
-            border-radius: 8px;
-            color: #7c7d7e;
-            transition: 400ms;
-            margin-right: 410px;
-           
-
-            &:hover {
-              background-color: #ff0000;
-              color: white;
-            }
+      p {
+        font-family: iran;
+        font-size: 14px;
+        color: #7c7d7e;
+        line-height: 30px;
+        text-align: justify;
+        margin: 0 10px;
+      }
     }
 
-    .rice-btn2>a{
+    .btn-slide {
+      width: 310px;
+      height: 90px;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: start;
+      margin-top: -20px;
+
+      .btnslide > a {
         text-decoration: none;
         border: 1px solid lightgray;
         background-color: white;
@@ -420,79 +658,34 @@ pre.every-text{
         border-radius: 8px;
         color: #7c7d7e;
         transition: 400ms;
-        margin-right: 5px;
+        margin-right: 25px;
+        vertical-align: middle;
 
         &:hover {
           background-color: #ff0000;
           color: white;
         }
+      }
     }
+  }
 }
 
-.teatext{
-    width: 100%;
-    height: 220px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
+h2.slider2{
+  color: #ff0000;
+  font-family: iran;
+  font-size: 20px;
+  margin-right: -170px;
+  font-weight: lighter;
+  margin-top: 10px;
 }
 
-.teatext2{
-    width: 100%;
-    height: 270px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
+h2.slider3{
+  color: #ff0000;
+  font-family: iran;
+  font-size: 20px;
+  margin-right: -200px;
+  font-weight: lighter;
+  margin-top: 10px;
 }
 
-.teabtn{
-    width: 100%;
-    height: 150px;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: start;
-    margin-top: -50px;
 
-
-    .tea-btn>a{
-        text-decoration: none;
-        border: 1px solid lightgray;
-        background-color: white;
-        padding: 7px 23px;
-        font-family: iran;
-        border-radius: 8px;
-        color: #7c7d7e;
-        transition: 400ms;
-        margin-right: 390px;
-        margin-top: -80px !important;
-
-        &:hover {
-          background-color: #ff0000;
-          color: white;
-        }
-    }
-}
-
-// .button-rice > a {
-//     text-decoration: none;
-//     border: 1px solid lightgray;
-//     background-color: white;
-//     padding: 7px 23px;
-//     font-family: iran;
-//     border-radius: 8px;
-//     color: #7c7d7e;
-//     margin-right: -60px;
-//     transition: 400ms;
-//   
-  
-
-//     &:hover {
-//       background-color: #ff0000;
-//       color: white;
-//     }
-//   }
-// end main-photo
